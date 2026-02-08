@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LaunchPad Studio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <div class="logo">LaunchPad Studio</div>
+        <div class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#workflow">Workflow</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="tag">Full-stack product team</p>
+          <h1>Ship customer-ready websites in weeks, not months.</h1>
+          <p>
+            We combine product strategy, design, and engineering to deliver digital
+            experiences that convert. Get a dedicated team, measurable outcomes,
+            and a launch plan built for growth.
+          </p>
+          <div class="hero-actions">
+            <button class="primary" id="open-brief">Request a project brief</button>
+            <button class="ghost" id="view-dashboard">View live status</button>
+          </div>
+          <div class="hero-metrics">
+            <div>
+              <h3>42%</h3>
+              <p>Average conversion lift</p>
+            </div>
+            <div>
+              <h3>8 weeks</h3>
+              <p>Typical launch timeline</p>
+            </div>
+            <div>
+              <h3>24/7</h3>
+              <p>Performance monitoring</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h2>Live Project Pulse</h2>
+          <p class="muted">Updated every 30 seconds</p>
+          <div class="pulse">
+            <div>
+              <span>Design system</span>
+              <strong>Approved</strong>
+            </div>
+            <div>
+              <span>Content upload</span>
+              <strong>In progress</strong>
+            </div>
+            <div>
+              <span>QA review</span>
+              <strong>Scheduled</strong>
+            </div>
+          </div>
+          <div class="status">
+            <span>Overall health</span>
+            <strong id="health-status">Checking...</strong>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="features" class="section">
+        <div class="section-heading">
+          <h2>Everything your launch needs</h2>
+          <p>
+            From kickoff to post-launch optimization, our team handles every stage
+            with clear milestones and a shared dashboard.
+          </p>
+        </div>
+        <div class="feature-grid">
+          <article>
+            <h3>Strategy Sprint</h3>
+            <p>Positioning, messaging, and KPI alignment in under five days.</p>
+          </article>
+          <article>
+            <h3>Design + Build</h3>
+            <p>Responsive components, accessible layouts, and rapid iteration.</p>
+          </article>
+          <article>
+            <h3>Launch & Optimize</h3>
+            <p>Analytics setup, A/B testing plan, and growth experiments.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="workflow" class="section workflow">
+        <div>
+          <h2>Transparent workflow</h2>
+          <p>
+            Stay informed with weekly demos, async updates, and a shared backlog.
+            Your product leaders see progress every step of the way.
+          </p>
+        </div>
+        <div class="timeline">
+          <div>
+            <h4>Week 1</h4>
+            <p>Discovery, audits, and roadmap definition.</p>
+          </div>
+          <div>
+            <h4>Weeks 2-5</h4>
+            <p>Design system, content, and development sprints.</p>
+          </div>
+          <div>
+            <h4>Weeks 6-8</h4>
+            <p>QA, performance tuning, and launch.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div>
+          <h2>Tell us about your launch</h2>
+          <p>
+            Share a few details and we will return a tailored scope within one
+            business day.
+          </p>
+        </div>
+        <form id="contact-form">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Alex Johnson" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="alex@email.com" required />
+          </label>
+          <label>
+            Topic
+            <input type="text" name="topic" placeholder="New product launch" required />
+          </label>
+          <label>
+            Project goals
+            <textarea
+              name="message"
+              rows="4"
+              placeholder="Tell us about your goals, audience, and timeline."
+              required
+            ></textarea>
+          </label>
+          <button class="primary" type="submit">Send project details</button>
+          <p id="form-status" class="muted" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <strong>LaunchPad Studio</strong>
+        <p>Product strategy + web delivery for ambitious teams.</p>
+      </div>
+      <div>
+        <p>hello@launchpad.studio</p>
+        <p>+1 (312) 555-0119</p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
